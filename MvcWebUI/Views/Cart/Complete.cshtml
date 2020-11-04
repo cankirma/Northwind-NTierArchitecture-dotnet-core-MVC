@@ -1,0 +1,37 @@
+﻿@model ShippingDetailsViewModel
+
+<form asp-controller="Cart" asp-action="Complete" method="post">
+    <div class="form form-group">
+        <span asp-validation-for="ShippingDetail.Firstname"></span>
+
+        <label asp-for="ShippingDetail.Firstname">Name</label>
+        <input asp-for="ShippingDetail.Firstname" class="form-control" placeholder="Customer Name" />
+
+        <span asp-validation-for="ShippingDetail.Lastname"></span>
+
+        <label asp-for="ShippingDetail.Lastname">Lastname</label>
+        <input asp-for="ShippingDetail.Lastname" class="form-control" placeholder="Customer Lastname" />
+
+        <span asp-validation-for="ShippingDetail.Address"></span>
+
+        <label asp-for="ShippingDetail.Address">Address</label>
+        <input asp-for="ShippingDetail.Address" class="form-control" placeholder="Customer Address" />
+
+        <span asp-validation-for="ShippingDetail.City"></span>
+
+        <label asp-for="ShippingDetail.City">City</label>
+        <input asp-for="ShippingDetail.City" class="form-control" placeholder="Customer City" />
+
+        <span asp-validation-for="ShippingDetail.Address"></span>
+
+        <label asp-for="ShippingDetail.Address">Address</label>
+        <input asp-for="ShippingDetail.Address" class="form-control" placeholder="Customer Address" />
+
+        <span asp-validation-for="ShippingDetail.Age"></span>
+
+        <label asp-for="ShippingDetail.Age">Age</label>
+        <input asp-for="ShippingDetail.Age" class="form-control" placeholder="Customer Age" />
+
+    </div>
+    <input type="submit" value="save" class="btn btn-success btn-group-sm" />
+</form>

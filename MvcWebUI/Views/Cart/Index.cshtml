@@ -1,0 +1,44 @@
+﻿@model CartListViewModel
+@{
+    ViewBag.Title = "Basket";
+    Layout = "_Layout";
+}
+
+<h2>Basket</h2>
+@if (Model.Cart.CartLines.Count == 0)
+{
+    <h2 class="h2">Basket Is Empty</h2>
+}
+else
+{
+        
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>ProductName</th>
+            <th>QuantityPerUnit</th>
+            <th>Price</th>
+            <th>UnitsInStock</th>
+        </tr>
+        </thead>
+        @foreach (var cartLine in Model.Cart.CartLines)
+        {
+
+            <tbody>
+            <tr>
+                <td>@cartLine.Product.ProductId</td>
+                <td>@cartLine.Product.ProductName</td>
+                <td>@cartLine.Product.QuantityPerUnit</td>
+                <td>@cartLine.Product.UnitPrice</td>
+                <td>@cartLine.Product.UnitsInStock</td>
+                <td>
+                    <a class="btn btn-danger btn-sm" asp-controller="Cart" asp-action="RemoveFromCart" asp-route-productId="@cartLine.Product.ProductId">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        }
+    </table>
+}
