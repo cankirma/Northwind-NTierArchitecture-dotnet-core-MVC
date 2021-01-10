@@ -19,7 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Android", "App\App.Andr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.iOS", "App\App.iOS\App.iOS.csproj", "{50496660-B1C6-4CF4-AEF7-15AF9A19F10A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App\App.csproj", "{DC6A164A-3B1A-4D1F-8A1A-77044B458788}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App", "App\App\App.csproj", "{DC6A164A-3B1A-4D1F-8A1A-77044B458788}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{203D258F-0B96-4C11-B075-32A76D49D91A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -146,6 +148,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{668D7696-5DE9-4FAB-9E05-0447808E3DAD} = {203D258F-0B96-4C11-B075-32A76D49D91A}
+		{50496660-B1C6-4CF4-AEF7-15AF9A19F10A} = {203D258F-0B96-4C11-B075-32A76D49D91A}
+		{DC6A164A-3B1A-4D1F-8A1A-77044B458788} = {203D258F-0B96-4C11-B075-32A76D49D91A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4DB1B226-1F84-4F33-8E9E-9B3C80BF496F}
